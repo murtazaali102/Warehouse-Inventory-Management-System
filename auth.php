@@ -12,7 +12,7 @@ if(empty($errors)){
      $session->login($user_id);
     //Update Sign in time
      updateLastLogIn($user_id);
-     $session->msg("s", "Welcome to OSWA-INV.");
+     $session->msg("s", "Welcome to WMS-INVENTORY.");
      redirect('home.php',false);
 
   } else {
