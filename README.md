@@ -3,6 +3,7 @@ This project is basic inventory management system providing some basic and core 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Installation:
+
 First, download the latest updated project folder from the provided git link or clone that repository to your system.
 
 Second, to configure the database and set up the basic structure of the databases, load or import the ‘wms-db.sql’ file into your mySql database.
