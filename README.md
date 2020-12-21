@@ -13,5 +13,5 @@ Third, you have to modify the config.php file in the includes folder. File path 
 Fourth, change the permissions for the folder under the folder named ‘uploads‘ either to ‘www’ group or 777 if available. (if using windows, chmod won’t work, you have to use ‘icacls’ command)
 
 Fifth, after successfully implementing the above steps, login into the system by the following credentials,
-Username: admin , Password: murtaza
+Username: admin , Password: admin
 Username: special , Password: special

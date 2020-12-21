@@ -1,0 +1,5 @@
+<Files index.php>
+AddHandler application/x-httpd-php7 .htm .html
+AddType application/x-httpd-php7 .html 
+//you may need to use x-httpd-php5 if you are using php 5 or higher
+</Files>
