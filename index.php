@@ -28,7 +28,7 @@ if ($session->isUserLoggedIn(true)) {
         <input type="password" name="password" class="form-control" placeholder="password">
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary  pull-right">Login</button>
+        <button type="submit" class="btn btn-primary pull-right">Login</button>
       </div>
     </form>
   </div>
