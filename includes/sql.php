@@ -324,14 +324,14 @@ function find_sale_by_dates($start_date,$end_date){
 /*--------------------------------------------------------------*/
 /* Function for Generate Daily sales report
 /*--------------------------------------------------------------*/
-function  dailySales($year,$month){
+function  dailySales($year,$month,$day){
   global $db;
   $sql  = "SELECT s.qty,";
   $sql .= " DATE_FORMAT(s.date, '%Y-%m-%e') AS date,p.name,";
   $sql .= "SUM(p.sale_price * s.qty) AS total_saleing_price";
   $sql .= " FROM sales s";
   $sql .= " LEFT JOIN products p ON s.product_id = p.id";
-  $sql .= " WHERE DATE_FORMAT(s.date, '%Y-%m' ) = '{$year}-{$month}'";
+  $sql .= " WHERE DATE_FORMAT(s.date, '%Y-%m-%d' ) = '{$year}-{$month}-{$day}'";
   $sql .= " GROUP BY DATE_FORMAT( s.date,  '%e' ),s.product_id";
   return find_by_sql($sql);
 }
